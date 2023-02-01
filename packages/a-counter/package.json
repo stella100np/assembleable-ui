@@ -1,0 +1,37 @@
+{
+  "name": "@assembleable-ui/a-counter",
+  "version": "0.0.1",
+  "description": "a composable counter",
+  "main": "dist/assembleable-ui-a-counter.cjs.js",
+  "module": "dist/assembleable-ui-a-counter.esm.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/assembleable-ui-a-counter.cjs.js",
+      "default": "./dist/assembleable-ui-a-counter.esm.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup && pnpm build:types",
+    "build:fast": "tsup",
+    "types:check": "tsc --noEmit",
+    "dev": "tsup --watch",
+    "build:types": "tsup src --dts-only"
+  },
+  "author": "stella100np",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": ">=3.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@vueuse/core": "^9.12.0",
+    "vue": "^3.2.37"
+  },
+  "packageManager": "pnpm@6.32.7"
+}
