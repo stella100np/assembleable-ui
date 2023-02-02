@@ -3,13 +3,20 @@
   "version": "0.0.0",
   "description": "Vue Composition Utilities, inspired by ✨vueuse",
   "main": "index.js",
-  "scripts": {
-  },
   "keywords": [
     "vue",
     "composable",
     "hook"
   ],
-  "author": "stella100np",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stella100np/assembleable-ui.git"
+  },
+  "author": "stella100np <2744636484@qq.com>",
+  "homepage": "https://github.com/stella100np#readme",
+  "bugs": {
+    "url": "https://github.com/stella100np/assembleable-ui/issues"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@6.32.7"
 }

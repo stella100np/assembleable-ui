@@ -21,7 +21,15 @@
     "dev": "tsup --watch",
     "build:types": "tsup src --dts-only"
   },
-  "author": "stella100np",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stella100np/assembleable-ui.git"
+  },
+  "author": "stella100np <2744636484@qq.com>",
+  "homepage": "https://github.com/stella100np#readme",
+  "bugs": {
+    "url": "https://github.com/stella100np/assembleable-ui/issues"
+  },
   "license": "MIT",
   "peerDependencies": {
     "vue": ">=3.0.5"

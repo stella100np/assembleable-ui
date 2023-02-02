@@ -11,20 +11,32 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
+    "changeset": "changeset",
+    "ci:version": "changeset version",
+    "ci:publish": "turbo lint && turbo build && turbo test && changeset publish",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stella100np/assembleable-ui.git"
+  },
+  "author": "stella100np <2744636484@qq.com>",
+  "homepage": "https://github.com/stella100np#readme",
+  "bugs": {
+    "url": "https://github.com/stella100np/assembleable-ui/issues"
+  },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
-    "turbo": "latest",
     "tsup": "^6.5.0",
+    "turbo": "latest",
+    "unplugin-vue-jsx": "0.1.2",
     "vitest": "^0.18.0",
-    "vue": "^3.2.37",
-    "unplugin-vue-jsx": "0.1.2"
+    "vue": "^3.2.37"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
   "packageManager": "pnpm@6.32.7"
 }
